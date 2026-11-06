@@ -1,0 +1,21 @@
+{
+  "name": "vapi-x402-weather-api",
+  "version": "1.0.0",
+  "description": "Pay-per-call weather API on Base via x402 ($0.001 USDC per call). Wraps Open-Meteo (free, no key). Built to be listed on vAPI Call.",
+  "type": "module",
+  "main": "src/server.js",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "node --watch src/server.js"
+  },
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@x402/core": "^2.30.0",
+    "@x402/evm": "^2.30.0",
+    "@x402/express": "^2.30.0",
+    "@x402/svm": "^2.30.0",
+    "express": "^4.21.2"
+  }
+}
